@@ -4,6 +4,16 @@ This is a simple desktop application written in C++ that allows you to scan docu
 
 The program uses OpenCV to detect a document in a photo, correct its perspective, and save it as a clean, flat image. A basic graphical interface is implemented using wxWidgets.
 
+---
+
+## Demo
+
+> Example of document detection and perspective correction:
+
+![demo](docs/demo.gif)
+
+---
+
 ## Features
 
 * Load images (`.jpg`, `.png`)
@@ -15,6 +25,7 @@ The program uses OpenCV to detect a document in a photo, correct its perspective
   * Grayscale
   * Black & White
 * Saves result to a `results` folder
+* Interactive corner adjustment (drag & drop)
 
 ## How to use
 
@@ -22,7 +33,15 @@ The program uses OpenCV to detect a document in a photo, correct its perspective
 2. Click "Choose file"
 3. Select an image with a document
 4. Choose processing mode
-5. The result will be saved automatically
+5. Adjust contours
+6. The result will be saved automatically
+
+## Example ouput
+
+<p align="center">
+  <img src="docs/input.jpg" width="300"/>
+  <img src="docs/output.jpg" width="300"/>
+</p>
 
 ## Requirements
 
