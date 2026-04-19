@@ -21,9 +21,10 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(wxWidgets)
 
-set(SRCS src/Source.cpp)
+set(SRCS src/main.cpp src/scan.cpp)
 
-add_executable(${PROJECT_NAME} WIN32 ${SRCS})
+add_executable(${PROJECT_NAME} WIN32 ${SRCS}
+   inc/common.h)
 
 set(OpenCV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../libraries/opencv/build")
 find_package(OpenCV REQUIRED NO_DEFAULT_PATH)
